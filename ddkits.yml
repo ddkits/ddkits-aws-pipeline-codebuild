@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+  ddkits:
+    build: ~/.ddkits/ddkits-files/ddkits
+    image: ddkits
+    container_name: ddkits
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+        - ./deploy/docker.sock:/tmp/docker.sock
+        - /etc/nginx
+    networks:
+      - ddkits
+networks:
+  ddkits:
+
+  

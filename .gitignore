@@ -1,0 +1,39 @@
+# Ignore configuration files that may contain sensitive information.
+public/sites/*/settings*.php
+public/sites/*/default.settings.php
+
+# Ignore paths that contain user-generated content.
+public/*
+sites/*
+vendor/*
+pre_installation_whywebs/*
+jenkins/*
+nginx/*
+cache/*
+composer.lock
+.DS_Store
+ddkits.env.yml
+ddkitsnew.yml
+ddkits-files/*/sites/*_*.conf
+ddkits_alias
+app
+# *.html
+~/ddkits-files/ddkits/*.html
+~/ddkits-files/ddkits/*/*.html
+*.crt
+*.key
+*/*.dev.sh
+deploy
+*-deploy
+ddkits.phar
+*/drupal/ddkitscli.sh
+*/ddkits/sites/ddkitscust.conf
+*/ddkitsInfo.dev.sh
+*/ddkitsInfo.ports.sh
+*/ddkitsInfo.prod.sh
+ddkits-files/drupal/Dockerfile
+*/*ddkits/site.txt
+*/*Info.dev.sh
+ddkits-files/ddkitsInfo.ports.sh
+ddkits-files/ddkitscli.sh
+ddkits-files/ddkitsInfo.dev.sh

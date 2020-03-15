@@ -1,67 +1,71 @@
-# DDKits v2.01 Built by Mutasem Elayyoub melayyoub@outlook.com
+<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-- HTTPS/HTTP included with all CMSs
-- New ssl port to be used by composer
-- DDK rebuild now including all save information from the old installation at the same folder
-- DDK fix now fixing all docker machine drivers not just DDkits machine
-- DDK rmn remove all un-eeded old images and containers with <none> names
-- DDK del will remove all images and containers from the machine and restart the default machine
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
-# DDKits v1.26 Built by Mutasem Elayyoub melayyoub@outlook.com
+## About Laravel
 
-- Ip for DDKits Machine static ...55.100 so whenever any update for docker DDKits will keep the same ip
-- DDK rebuild now including all save information from the old installation at the same folder
-- DDK fix now fixing all docker machine drivers not just DDkits machine
-- DDK rmn remove all un-eeded old images and containers with <none> names
-- DDK del will remove all images and containers from the machine and restart the default machine
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-# DDKits v1.20
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-<img src="https://travis-ci.org/ddkits/cli.svg?branch=master" />
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-Doctor Development Kit is an open source local development environment and workflow tool based on Docker. DDKits allows users to build more than one container under the same port with domains DNS control, super-fast development environments and to integrate those environments with their hosting provider or continuous integration workflows.
+## Learning Laravel
 
-With DDKits you can easily mimic your production environment on local plus the ability to setup, develop, pull and deploy your sites super fast. Dockerize your teams dev environments and tools on OSX, Windows and Linux. Free yourself from the hard times of building new products or environments.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-# Getting Started
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost you and your team's skills by digging into our comprehensive video library.
 
-Now that you’ve successfully installed DDKits app you can start creating your own apps. DDKits apps are completely isolated development environments. At a high level they contain the following things:
+## Laravel Sponsors
 
-Same port as your local host or Virtual machine
-Quick start with short questions about your new environment
-Fast installation of any new container or image
-Random backend port pick, which save the trouble of making sure of your container's port to be not used with another container.
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-#DDKits includes:
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[British Software Development](https://www.britishsoftware.co)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- [UserInsights](https://userinsights.com)
+- [Fragrantica](https://www.fragrantica.com)
+- [SOFTonSOFA](https://softonsofa.com/)
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
+- [CodeBrisk](https://codebrisk.com)
+- [1Forge](https://1forge.com)
+- [TECPRESSO](https://tecpresso.co.jp/)
+- [Runtime Converter](http://runtimeconverter.com/)
+- [WebL'Agence](https://weblagence.com/)
+- [Invoice Ninja](https://www.invoiceninja.com)
+- [iMi digital](https://www.imi-digital.de/)
+- [Earthlink](https://www.earthlink.ro/)
+- [Steadfast Collective](https://steadfastcollective.com/)
+- [We Are The Robots Inc.](https://watr.mx/)
+- [Understand.io](https://www.understand.io/)
+- [Abdel Elrafa](https://abdelelrafa.com)
 
-DDKits Proxy controller.
-Your Web application with any platform by your choice.
-Jenkins with an easy access domain http://jenkins.YOUR_DOMAIN.
-Solr with an easy access domain http://solr.YOUR_DOMAIN.
-Redis fully cache system can be used by your application.
+## Contributing
 
-# includes
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-1. Drupal v7 & v8
-2. Wordpress
-3. Joomla
-4. Laravel
-5. LAMP/PHP5
-6. LAMP/PHP7
-7. Umbraco
-8. Magento
-9. DreamFactory
-10. Contao
-11. Silverstripe
-12. Cloud
-13. Symfony
-14. Expression Engine
-15. Elgg
-16. Zend
-17. Zen Cart E-commerce
-18. Jenkins
-19. nGrinder
+## Security Vulnerabilities
 
-# For more information:
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-http://www.ddkits.com by Mutasem Elayyoub
+## License
+
+The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).

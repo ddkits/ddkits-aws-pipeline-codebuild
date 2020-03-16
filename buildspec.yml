@@ -1,0 +1,8 @@
+Version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo pre-build started
+  build:
+    commands:
+      - composer install

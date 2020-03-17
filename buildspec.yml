@@ -6,6 +6,6 @@ phases:
   build:
     commands:
       - composer install
-      - cp extra/.env ./
+      - cp extra/.env .env
       - source ddkits.fix.sh &> /dev/null
       - php artisan cache:clear

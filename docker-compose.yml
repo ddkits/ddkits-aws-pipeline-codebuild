@@ -1,0 +1,9 @@
+version: "3.1"
+
+services:
+  web:
+    build: .
+    image: ddkits/laravel:latest
+    stdin_open: true
+    tty: true
+    container_name: aws_site_ddkits_web

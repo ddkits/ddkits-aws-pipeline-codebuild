@@ -14,9 +14,9 @@ RUN ln -sf $DDKITSFL/logs /var/log/nginx/access.log \
     && rm /etc/apache2/sites-enabled/*
 RUN chmod -R 777 /var/www/html
 ADD . /var/www/html
-COPY Laravel/php.ini /etc/php/7.0/fpm/php.ini
+# COPY Laravel/php.ini /etc/php/7.0/fpm/php.ini
 RUN rm -rf /etc/apache2/sites-enabled/*
-COPY Laravel/sites/default00.conf /etc/apache2/sites-enabled/default00.conf
+# COPY Laravel/sites/default00.conf /etc/apache2/sites-enabled/default00.conf
 
 # ssh
 ENV SSH_PASSWD "root:Docker!"

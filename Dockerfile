@@ -28,6 +28,7 @@ ENV SSH_PASSWD "root:Docker!"
 
 # COPY sshd_config /etc/ssh/
 
+RUN composer install
 # Fixing permissions
 RUN chown -R www-data:www-data /var/www/html
 RUN usermod -u 1000 www-data

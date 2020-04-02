@@ -27,3 +27,11 @@ stages:
         dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
+    - task: AzureWebAppContainer@1
+      inputs:
+        azureSubscription: 'Pay-As-You-Go(8b56ecf7-b521-4669-998b-d3d0e375127e)'
+        appName: 'ddkits-laravel'
+        deployToSlotOrASE: true
+        resourceGroupName: 'DDKits'
+        slotName: 'production'
+        containers: 'ddkitsprod'

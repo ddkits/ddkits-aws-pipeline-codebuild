@@ -13,7 +13,8 @@ RUN ln -sf $DDKITSFL/logs /var/log/nginx/access.log \
 RUN chmod -R 777 /var/www/html
 
 COPY Laravel/php.ini /etc/php/7.0/fpm/php.ini
-COPY Laravel/sites/aws_site.conf /etc/apache2/sites-enabled/aws_site.conf
+RUN rm -rf /etc/apache2/sites-enabled/*
+COPY Laravel/sites/default00.conf /etc/apache2/sites-enabled/default00.conf
 
 # Fixing permissions
 RUN chown -R www-data:www-data /var/www/html

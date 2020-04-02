@@ -26,8 +26,7 @@ ENV SSH_PASSWD "root:Docker!"
 #     && apt-get install -y --no-install-recommends openssh-server \
 #     && echo "$SSH_PASSWD" | chpasswd
 
-COPY sshd_config /etc/ssh/
-COPY init.sh /usr/local/bin/
+# COPY sshd_config /etc/ssh/
 
 # Fixing permissions
 RUN chown -R www-data:www-data /var/www/html
